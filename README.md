@@ -7,7 +7,7 @@ It supports two types of notes:
 * Public or non-sensitive notes stored in plain text.
 * Private notes encrypted with [`git-crypt`](https://github.com/AGWA/git-crypt) before being pushed to GitHub.
 
-## Repository Structure
+## Repository structure
 
 ```text
 zettelkasten/
@@ -67,7 +67,7 @@ git add .
 git commit -m "init notes"
 ```
 
-## Export the Encryption Key
+## Export the encryption key
 
 ```bash
 git-crypt export-key ~/secure-keys/notes.gitcrypt.key
@@ -75,7 +75,7 @@ git-crypt export-key ~/secure-keys/notes.gitcrypt.key
 
 This key is required to unlock the encrypted files on another machine.
 
-## Clone and Unlock on a New Machine
+## Clone and unlock on a new machine
 
 Install `git-crypt` first.
 
@@ -94,7 +94,7 @@ git-crypt unlock ~/secure-keys/notes.gitcrypt.key
 
 After unlocking, encrypted notes will appear as normal readable files locally.
 
-## Daily Workflow
+## Daily workflow
 
 Use Git normally:
 
@@ -113,7 +113,7 @@ git commit -m "update notes"
 git push
 ```
 
-## Check Encryption Status
+## Check encryption status
 
 To verify which files are encrypted:
 
